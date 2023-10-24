@@ -10,3 +10,4 @@ def safe_print_list_integers(my_list=[], x=0):
         print ("list index out of range")
     except (TypeError):
         pass
+    return (count)
