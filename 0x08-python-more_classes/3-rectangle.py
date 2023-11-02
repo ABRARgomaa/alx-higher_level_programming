@@ -3,22 +3,21 @@
 
 
 class Rectangle:
-    """Creates a Reactangle"""
-
+    """creates a Reactangle"""
     def __init__(self, width=0, height=0):
-         """Create instances for a rectangle
+        """create instances for a rectangle
 
-         Args:
-         width and height
-         """
-         self.height = height
-         self.width = width
+        Args:
+        width and height
+        """
+        self.height = height
+        self.width = width
 
-    @Property
+    @property
     def width(self):
         return (self.__width)
 
-    @Width.setter
+    @width.setter
     def width(self, value):
         if (not isinstance(value, int)):
             raise TypeError("width must be an integer")
@@ -26,17 +25,17 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @Property
+    @property
     def height(self):
         return (self.__height)
 
-    @Height.setter
-     def height(self, value):
-         if (not isinstance(value, int)):
-             raise TypeError("height must be an integer")
-         if value < 0:
-             raise ValueError("height must be >= 0")
-         self.__height = value
+    @height.setter
+    def height(self, value):
+        if (not isinstance(value, int)):
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
     def area(self):
         return (self.__height * self.__width)
