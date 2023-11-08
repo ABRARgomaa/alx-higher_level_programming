@@ -5,11 +5,11 @@
 def is_kind_of_class(obj, a_class):
     """method for alx task
 
-     Args:
-     obj
-     a_class
-     """
-     if isinstance(obj, a_class):
-         return True
-     else:
-         return False
+    Args:
+    obj
+    a_class
+    """
+    if isinstance(obj, a_class):
+        return True
+    else:
+        return False
