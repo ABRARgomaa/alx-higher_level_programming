@@ -2,7 +2,7 @@
 '''module for base class'''
 
 
-class base:
+class Base:
     '''class'''
 
     __nb_objects = 0
@@ -12,5 +12,5 @@ class base:
         if id is not None:
             self.id = id
         else:
-            base.__nb_objects += 1
-            self.id = base.__nb_objects
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
