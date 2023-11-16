@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 '''module for alx project'''
+from modules.base import Base
 
 
 class Rectangle(Base):
