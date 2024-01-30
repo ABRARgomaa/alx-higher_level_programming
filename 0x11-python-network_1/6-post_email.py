@@ -11,3 +11,4 @@ if __name__ == "__main__":
     data = {'email': sys.argv[2]}
     with requests.post(u, data=data) as response:
         print(response.text)
+        

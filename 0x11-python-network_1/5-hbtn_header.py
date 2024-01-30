@@ -11,3 +11,4 @@ if __name__ == "__main__":
     with requests.get(u) as response:
         header = response.headers.get("X-Request-Id")
         print(header)
+        
