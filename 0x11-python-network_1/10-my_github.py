@@ -17,4 +17,3 @@ if __name__ == "__main__":
     with requests.get(url, headers=headers) as response:
         body = response.json()
         print(body.get("id"))
-        
