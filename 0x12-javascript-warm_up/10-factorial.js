@@ -6,4 +6,4 @@ function fact (num) {
       return num * fact(num - 1);
     }
   }
-  console.log(fact(Number(process.argv[2])));
+console.log(fact(Number(process.argv[2])));
